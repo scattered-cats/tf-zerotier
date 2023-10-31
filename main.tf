@@ -36,7 +36,7 @@ resource "zerotier_member" "each" {
   for_each = var.members
   name        = each.value.name
   member_id   = each.value.id
-  description = each.value.description
+  description = each.value.desc
   network_id  = zerotier_network.target.id
   hidden                  = true
   allow_ethernet_bridging = true
