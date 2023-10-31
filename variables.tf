@@ -9,5 +9,6 @@ variable "member" {
   type = object({
     name = string
     id = string
+    desc = string
   })
 }
