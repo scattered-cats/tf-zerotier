@@ -12,3 +12,7 @@ variable "member" {
     desc = string
   })
 }
+
+variable "token" {
+  type = string
+}
