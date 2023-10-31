@@ -1,4 +1,6 @@
-provider "zerotier" {}
+provider "zerotier" {
+  zerotier_central_token = var.token
+}
 
 # These generate random member identities; should try to make work only if not provided.
 resource "zerotier_identity" "alice" {}
