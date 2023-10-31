@@ -1,6 +1,7 @@
 variable "network" {
   type = object({
     name = string
+    desc = string
   })
 }
 
